@@ -1,0 +1,81 @@
+{% extends '../layouts/default.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="jumbotron">
+        <h1 class="text-center">
+            Welcome New User
+            <br>
+        </h1>
+        <p class="text-center">
+            Please fill out the following
+            <br>
+        </p>
+        <p>
+        </p>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js">
+</script>
+<form action="/register" method="post">
+    <div class="row">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <div class="row">
+                </div>
+                <input name="un" id="username" placeholder="User Name" class="form-control"
+                       type="text">
+            </div>
+        </div>
+        <div style="display: block;" class="col-md4">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <input id="password" name="pw" placeholder="Password" class="form-control"
+                       type="password">
+            </div>
+        </div>
+        <div class="col-md-4">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <input name="vpw" id="validate_password" placeholder="Repeat Password"
+                       class="form-control" type="password">
+            </div>
+        </div>
+        <div class="col-md-4">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4">
+            <div class="row">
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-4">
+                    <button type="submit" class="btn btn-lg btn-primary">
+                        &nbsp;&nbsp; Sign Up&nbsp; &nbsp;
+                    </button>
+                </div>
+                <div class="col-md-4">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+        </div>
+    </div>
+</form>
+{% endblock %}

@@ -1,0 +1,62 @@
+{% extends '../layouts/default.html' %}
+
+{% block content %}
+<div class="container">
+    <h1 class="text-center">
+        Tracker
+        <i></i>
+        <br>
+    </h1>
+    <div class="page-header">
+        <h3 class="text-center">
+            Track your favorite tv show
+            <br>
+        </h3>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js">
+</script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js">
+</script>
+<div class="form-group">
+</div>
+<div class="form-group">
+    <div class="row">
+        <div class="col-md-6">
+            <h3 class="text-center">
+                User Name
+                <br>
+            </h3>
+            <form action="/login" method="post">
+                <div class="form-group">
+                    <input name="un" id="username" placeholder="User Name" class="form-control"
+                           type="text">
+                </div>
+ 
+        </div>
+        <div class="col-md-6">
+            <h3 class="text-center">
+                Password
+                <br>
+            </h3>
+            <div class="form-group">
+                <input id="password" name="pw" placeholder="Password" class="form-control"
+                       type="password">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-3">
+    </div>
+    <div class="col-md-3">
+        <button type="submit" class="btn pull-right btn-lg btn-success text-center">&nbsp; ENTER &nbsp;</button>
+    </div>
+    </form>
+    <div class="col-md-3">
+        <a href="/register" class="btn btn-default btn-lg pull-left">New User</a>
+    </div>
+    <div class="col-md-3">
+    </div>
+</div>
+{% endblock %}
