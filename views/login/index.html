@@ -1,23 +1,29 @@
+﻿<li style="height: auto;">
 {% extends '../layouts/default.html' %}
 
 {% block content %}
-    <h1>Login</h1>
+
+	
+    <h1 style="width: 67px; display: block; position: relative; left: 881px; top: 81px; font-size: xx-large; height: 28px;">Login</h1>
 
     <form action="/login" method="post">
-        <ul>
-            <li>
-                <label for="username">Email</label>
-                <input id="username" type="text" name="un" value="{{ username }}" >
-            </li>
-            <li>
-                <label for="password">Password</label>
-                <input id="password" type="password" name="pw" >
-            </li>
-            <li>
-                <button type="submit">Go</button>
-            </li>
-        </ul>
+       
+            
+                <label for="username" style="position: relative; left: 868px; top: 118px; height: 30px; font-size: x-large; width: 109px;">User Name</label>
+                <input id="username" type="text" name="un" value="Example
+				" style="position: relative; left: 726px; top: 165px; height: 15px; border-radius: 0px;" >
+       
+        
+                <label for="password" style="position: relative; left: 601px; top: 239px; font-size: x-large;">Password</label>
+                <input id="password" type="password" name="pw" style="position: relative; left: 477px; top: 284px;" >
+           
+            
+                <button type="submit" style="width: 103px; height: 35px; position: relative; left: 347px; top: 357px;">Submit</button>
+          
+       
     </form>
 
-    <p><a href="/register">Register</a></p>
+    <p style="position: fixed; left: 895px; top: 374px;"><a href="/register" style="position: relative; top: 204px; left: -2px; height: 18px; width: 53px;">Register</a></p>
+	
 {% endblock %}
+</li>

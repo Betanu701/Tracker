@@ -5,7 +5,9 @@ var express = require('express'),
     passport = require('passport'),
     crypto = require('crypto'),
     Bookshelf = require('bookshelf'),
-    messages = require('./util/messages');
+    messages = require('./util/messages'),
+    tvDB = require("thetvdb-api"),
+         key = "816F85565DC3CC6B";
 
 var app = express();
 
