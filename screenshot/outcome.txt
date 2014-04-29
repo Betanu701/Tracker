@@ -1,0 +1,13 @@
+ Do you complete all your three milestones? 
+	I did not complete all three milestones. I built a basic website and was able to get a login and user authentication. I was not abel to get a tv traacker working.
+
+ What had already been done?
+	Part of the authentication was already done. I modified it and added an entire frontend to it. I also built a Mysql database to use/
+
+ What need to be done to improve the app?
+	Actually getting a tracker and tv show search. There are alot of bugs that is in the program. Alot of security flaws in using mysql.
+
+ What kind of problems do you have during the development? (If you've solved the problems, please list your solution.)
+
+I was able to get my site up and running on my local machine. It would not run on the heroku server however. I am thinking it has something to do with linux being captital specific. I tried reading the error codes but it kept saying it is something with my program. It was something to do with npm and my program. Also trying to build a database with tv directories seemed to be an extremly difficult task.
+ 
